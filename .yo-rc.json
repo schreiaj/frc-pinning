@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "FRC Pinning",
+    "packageVersion": "0.0.0",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "schreiaj",
+    "githubRepository": "frc-pinning"
+  }
+}
