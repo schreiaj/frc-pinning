@@ -1,0 +1,24 @@
+<h2>Robot Intro</h2>
+
+<svg id="canvas" width=800px height=800px></svg>
+
+
+<script charset="utf-8" id="run">
+  c = Snap("#canvas")
+  Snap.load("images/robot.svg", function(f){
+    c.append(f.select("#robot"))
+
+    robot = d3.select("#robot")
+    robot.transition().duration(5000)
+      .attr("transform", function(){
+        elBox = this.getBBox()
+        center = {cx: elBox.width/2+elBox.x, cy:elBox.height/2+elBox.y}
+        return "translate(200, 200) rotate(90," + center.cx + "," + center.cy + ")"
+      })
+
+  })
+</script>
+
+<script charset="utf-8" id="undo">
+  c.selectAll("*").remove()
+</script>
