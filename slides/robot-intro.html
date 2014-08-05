@@ -1,0 +1,13 @@
+<h2>Robot Intro</h2>
+
+<svg id="canvas" width=800px height=800px></svg>
+
+
+<script charset="utf-8" id="run">
+  c = Snap("#canvas")
+  Snap.load("images/robot.svg", function(f){
+    c.append(f.select("#robot"))
+    window.robot = c.select("#robot")
+
+  })
+</script>
